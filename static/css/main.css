@@ -68,7 +68,7 @@ h4 {
 
 header {
     background: #f16251;
-    background-image: url(/static/img/header3.png);
+    background-image: url('/static/img/header3.png');
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
