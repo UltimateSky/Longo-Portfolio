@@ -5,6 +5,7 @@ body {
     /* The html and body elements cannot have any padding or margin. */
     -webkit-font-smoothing: antialiased;
     font: normal 14px arial, sans-serif;
+    top: 0;
 }
 
 .row {
@@ -67,13 +68,15 @@ h4 {
 }
 
 header {
-    background: #f16251;
-    background-image: url('/static/img/header3.png');
-    background-position: center;
+    color: #000000;
+}
+
+.header-bg {
+    background: url('../img/header3.png') no-repeat center center fixed;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 550px;
-    color: #000000;
+    height: 750px;
+    top: 0;
 }
 
 header h1,
@@ -109,6 +112,14 @@ header .dropdown-menu {
 
 h1 {
     font-size: 50px;
+}
+
+.profile-pic {
+    margin: 0 auto;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
 }
 
 #nav {
