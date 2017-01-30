@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Taylor Marie Photography</title>
+    <meta name="description" content="Taylor Marie Photography">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <!-- Bootstrap  -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- icon fonts font Awesome -->
+    <link href="static/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="static/css/main.css" rel="stylesheet">
+    <link href="static/css/kite.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+	<script src="static/js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="lading"></div>
+        </div>
+    </div>
+    <!-- /#preloader -->
+    <!-- Preloader End-->
+    <div class="background-image toggle-image first-image show"></div>
+    <div class="background-image toggle-image second-image"></div>
+    <div class="background-image toggle-image third-image"></div>
+    <!-- Page Top Section -->
+    <section id="page-top" class="section-style">
+        <div class="height-resize">
+            <div class="container">
+                <h1 class="site-title">
+					<img src="static/img/tml.png" style="display:block; margin: auto; max-width: 300px; max-height: 300px">
+				</h1>
+                <!-- /.section-name -->
+                <h2 class="section-title">
+					Coming Soon
+				</h2>
+                <!-- /.Section-title  -->
+                <div id="time_countdown" class="time-count-container">
+                    <div class="col-sm-3">
+                        <div class="time-box">
+                            <div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300"> <span class="time-number">
+									<span class="digit">0</span> <span class="digit">0</span> <span class="digit">0</span> </span> <span class="time-name">Days</span> </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="time-box">
+                            <div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600"> <span class="time-number">
+									<span class="digit">0</span> <span class="digit">0</span> </span> <span class="time-name">Hours</span> </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="time-box">
+                            <div class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900"> <span class="time-number">
+									<span class="digit">0</span> <span class="digit">0</span> </span> <span class="time-name">Minutes</span> </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="time-box">
+                            <div class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200"> <span class="time-number">
+									<span class="digit">0</span> <span class="digit">0</span> </span> <span class="time-name">Seconds</span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.pattern -->
+    </section>
+    <!-- /#page-top -->
+    <!-- Page Top Section  End -->
+    <!-- Footer Section -->
+    <!-- Footer -->
+    <div class="navbar-fixed-bottom" id="footer">
+        <div class="container">
+            <p class="text-muted" style="text-align: center">&copy; 2017 Taylor Marie Photography | Georgia, U.S.A.</p>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="static/js/jquery-2.1.0.min.js"></script>
+    <!-- Modernizr js -->
+    <script type="text/javascript" src="static/js/modernizr-2.8.0.min.js"></script>
+    <!-- Plugins -->
+    <script type="text/javascript" src="static/js/plugins.js"></script>
+    <!-- Custom JavaScript Functions -->
+    <script type="text/javascript" src="static/js/functions.js"></script>
+    <!-- Custom JavaScript Functions -->
+    <script type="text/javascript" src="static/js/jquery.ajaxchimp.min.js"></script>
+    
+        <script>
+        function cycleBackgrounds() {
+            var index = 0;
+            $imageEls = $('.toggle-image'); // Get the images to be cycled.
+            setInterval(function () {
+                // Get the next index.  If at end, restart to the beginning.
+                index = index + 1 < $imageEls.length ? index + 1 : 0;
+                // Show the next image.
+                $imageEls.eq(index).addClass('show');
+                // Hide the previous image.
+                $imageEls.eq(index - 1).removeClass('show');
+            }, 2000);
+        };
+        // Document Ready.
+        $(function () {
+            cycleBackgrounds();
+        });
+    </script>
+</body>
+
+</html>
