@@ -12,7 +12,7 @@ section {
 
 /* Styles for the alternating / transition effect. */
 .toggle-image {
- 	position: absolute;
+ 	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;

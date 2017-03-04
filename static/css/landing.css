@@ -22,14 +22,29 @@ body {
 
 .enter {
     position: absolute;
-    left: 46.3%;
+    padding: 15px;
+    left: 46.5%;
     top: 75%;
+    font-weight: 700;
     text-align: center;
+    text-transform: uppercase;
     z-index: 1100;
+    color: #000;
+    background-color: #F7DC6F;
+    border-color: #dec663;
+}
+
+.enter:hover {
+    padding: 15px;
+    font-weight: 700;
+    background-color: #dec663;
+    border-color: #dec663;
+    color: #000;
 }
 
 btn:hover {
     font-weight: 100;
+    color:rgba( 91, 212, 47, 0.456 )
 }
 
 
@@ -49,7 +64,7 @@ btn:hover {
 
 .fill {
     width: 100%;
-    height: 100%;
+    height: 95vh;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
